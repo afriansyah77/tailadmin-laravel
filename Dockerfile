@@ -28,11 +28,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN composer install --prefer-dist --no-scripts --no-dev --optimize-autoloader
-
-RUN npm install
-
-RUN npm run prod
+RUN chmod +x install.sh
+RUN ./install.sh
 
 CMD php artisan serve --host=0.0.0.0 --port=8090
 

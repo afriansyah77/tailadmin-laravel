@@ -2,7 +2,7 @@
 
 npm install
 npm run prod
-composer install
+composer install --prefer-dist --no-scripts --no-dev --optimize-autoloader
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
