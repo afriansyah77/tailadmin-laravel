@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   web:
-    image: mwar8205/r00txtr1-tailadmin-laravel:beta
+    image: afrisyah/afrisyah-tailadmin-laravel:beta
     ports:
       - "8090:8090"
     depends_on:
@@ -10,9 +10,9 @@ services:
   db:
     image: mysql:5.7
     environment:
-      MYSQL_DATABASE: r00t
-      MYSQL_USER: r00t
-      MYSQL_PASSWORD: r00t
-      MYSQL_ROOT_PASSWORD: r00t
+      MYSQL_DATABASE: tailadmin-db
+      MYSQL_USER: tailadmin-user
+      MYSQL_PASSWORD: tailadmin-pass
+      MYSQL_ROOT_PASSWORD: tailadmin-root-pass
     ports:
       - "3307:3306"

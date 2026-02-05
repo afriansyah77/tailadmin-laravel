@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: "mwar8205/r00txtr1-tailadmin-laravel:beta"
+  IMAGE_NAME: "afrisyah/afrisyah-tailadmin-laravel:beta"
 
 jobs:
   build-push-image:
