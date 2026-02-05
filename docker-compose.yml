@@ -15,4 +15,4 @@ services:
       MYSQL_PASSWORD: tailadmin-pass
       MYSQL_ROOT_PASSWORD: tailadmin-root-pass
     ports:
-      - "3307:3306"
+      - "3306"
